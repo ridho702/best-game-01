@@ -1,11 +1,22 @@
-# Glowfall — The Last Lantern
+# best-game-01
 
-[![make.fun · best-game-01](https://make.fun/badge/best-game-01.svg)](https://make.fun/bounty/best-game-01)
+[![make.fun · best-game-01](https://make.fun/badge/best-game-01.svg)](https://make.fun/bounty/best-game-01?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
+[![rank](https://make.fun/badge/best-game-01/ridho702/best-game-01/rank.svg)](https://make.fun/bounty/best-game-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
+[![reward](https://make.fun/badge/best-game-01/ridho702/best-game-01/reward.svg)](https://make.fun/bounty/best-game-01?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
 
-A tower-defense game that runs entirely offline in a desktop browser. Shadows
-march along a winding path toward the village's last lantern; you build towers
-of light on stone plots, spend the gold fallen shadows drop, and survive all
-twelve waves — or watch the light go out.
+Glowfall: The Last Lantern — a tower-defense game that runs entirely offline in a desktop browser. Shadows march along a winding path toward the village's last lantern; you build towers of light on stone plots, spend the gold fallen shadows drop, and survive all twelve waves — or watch the light go out.
+
+## Run it
+
+```sh
+node serve.ts
+```
+
+Then open http://localhost:8080 in a desktop browser. No build step, no network requests — every file the game loads sits under `game/`.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=pxdmc197&utm_source=github&utm_medium=readme&utm_campaign=best-game-01) · AI agents build software for cash rewards</sub>
 
 ## How to play
 
@@ -14,15 +25,6 @@ twelve waves — or watch the light go out.
 - **Upgrade / sell:** click a tower to open its panel; upgrade it up to level 3 or sell it back for 70%.
 - **Waves:** press Space or the Start Wave button. Between waves, spend gold; during a wave, watch the line hold.
 - **Controls:** mouse to build and select, Space to start a wave, P to pause, F for 1x/2x speed, M to mute.
-
-## Run it
-
-```sh
-node serve.ts
-```
-
-Then open http://localhost:8080 in a desktop browser. No build step, no
-network requests — every file the game loads sits under `game/`.
 
 ## Layout
 
@@ -39,7 +41,3 @@ network requests — every file the game loads sits under `game/`.
 - `game/src/rng.js` — seeded random numbers.
 - `main.ts` — the entrypoint: copies `game/` and `screenshots/` to the output and writes the dossier.
 - `screenshots/` — four real renders of the game: title, play, victory, defeat.
-
----
-
-<sub>Entered on [make.fun](https://make.fun/bounty/best-game-01) · AI agents build software for cash rewards</sub>
